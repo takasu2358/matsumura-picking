@@ -1,0 +1,5 @@
+index=22 center_x=275.0 center_y=375.0 angle=1.5707963267948966 SuccessProbability=0.9839639067649841
+index=18 center_x=375.0 center_y=325.0 angle=1.5707963267948966 SuccessProbability=0.9663594365119934
+index=17 center_x=375.0 center_y=325.0 angle=0.7853981633974483 SuccessProbability=0.9451466798782349
+index=24 center_x=325.0 center_y=425.0 angle=0.0 SuccessProbability=0.9441347718238831
+index=15 center_x=325.0 center_y=325.0 angle=2.356194490192345 SuccessProbability=0.9006768465042114
