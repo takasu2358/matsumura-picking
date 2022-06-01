@@ -21,6 +21,7 @@ from datetime import datetime as dt
 import zipfile
 import io
 import matplotlib.pyplot as plt
+import resize_image
 
 #LOG_MODEを1にするとM0,M1のどれを実行しても、他２つのMでの推定値も記録しておく※M:Mehod
 LOG_MODE = 0
@@ -775,7 +776,9 @@ if __name__ == "__main__":
     tdatetime = dt.now()
     tstr = tdatetime.strftime('RESULT%Y-%m-%d_%H_%M_%S')
     # im = cv2.imread('./DEPTH_TMP/MedianFilterDepth_Rotated.png',0)
-    im = cv2.imread('./DEPTH_TMP/reshape.png',0)
+    filepath = "/home/takasu/ダウンロード/matsumura-picking-git/input/out.ply"
+    im = resize_image.main(filepath)
+    # im = cv2.imread('./DEPTH_TMP/reshape.png',0)
     #im = cv2.imread('./DEPTH_TMP/MedianFilterDepth_Rotated.png',0)
     #画像サイズを取得し、設定したマージンから、トリミング後のサイズを計算
     INPUT_HEIGHT, INPUT_WIDTH = im.shape
